@@ -21,7 +21,7 @@
   <parent>
     <groupId>com.oracle.soa</groupId>
     <artifactId>sar-common</artifactId>
-    <version>12.2.1-2-0</version>
+    <version>12.2.1-1-0</version>
   </parent>
   <properties>
     <!-- These parameters are used by the compile goal -->
@@ -85,7 +85,7 @@
       <plugin>
         <groupId>com.oracle.soa.plugin</groupId>
         <artifactId>oracle-soa-plugin</artifactId>
-        <version>12.2.1-2-0</version>
+        <version>12.2.1-1-0</version>
         <dependencies>
           <dependency>
             <groupId>javax.el</groupId>
