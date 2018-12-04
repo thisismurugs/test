@@ -8,7 +8,7 @@
            the whole SOA Application, which may contain additional projects. 
         -->
   <modelVersion>4.0.0</modelVersion>
-  <groupId>SOAHelloWorld</groupId>
+  <!--<groupId>SOAHelloWorld</groupId>-->
   <artifactId>HelloWorldProject2</artifactId>
   <version>1.0</version>
   <packaging>sar</packaging>
