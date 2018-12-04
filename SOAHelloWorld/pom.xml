@@ -6,12 +6,16 @@
     <version>1.0</version>
     <packaging>pom</packaging>
 	
-	<parent>
+	<!--<parent>
         <groupId>com.oracle.soa</groupId>
         <artifactId>sar-common</artifactId>
         <version>12.2.1-1-0</version>
-        <relativePath />
-    </parent>
+    </parent>-->
+	<modules>
+    <!-- Add project modules -->
+		<module>HelloWordProject</module>
+		<module>HelloWorldProject2</module> 
+	</modules>
 	
 	<properties>
 		<skip.incremental>false</skip.incremental>
@@ -49,11 +53,7 @@
     <oracleHome>${env.ORACLE_HOME}</oracleHome>
     <soamds.apps.home>${env.soamds_apps_home}</soamds.apps.home>		
 	</properties>
-    <modules>
-    <!-- Add project modules -->
-		<module>HelloWordProject</module>
-		<module>HelloWorldProject2</module> 
-	</modules>
+
   
   <build>
     <pluginManagement>
