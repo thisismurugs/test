@@ -22,6 +22,7 @@
     <groupId>com.muruga</groupId>
     <artifactId>SOAHelloWorld</artifactId>
     <version>1.0</version>
+	<relativePath>../pom.xml</relativePath>
   </parent>
   <properties>
     <!-- These parameters are used by the compile goal -->
