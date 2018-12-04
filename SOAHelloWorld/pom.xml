@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.muruga</groupId>
+    <artifactId>SOAHelloWorld</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+	
+	<parent>
+        <groupId>com.oracle.soa</groupId>
+        <artifactId>sar-common</artifactId>
+        <version>12.2.1-1-0</version>
+        <relativePath />
+    </parent>
+	
+	<properties>
+		<skip.incremental>true</skip.incremental>
+	</properties>
+    <modules>
+    <!-- Add project modules -->
+		<module>HelloWordProject</module>
+		<module>HelloWorldProject2</module> 
+	</modules>
+  
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    <plugins>
+            <plugin>
+                <groupId>net.java.maven-incremental-build</groupId>
+                <artifactId>incremental-build-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>incremental-build</goal>
+                        </goals>
+                        <configuration>
+                            <noIncrementalBuild>${skip.incremental}</noIncrementalBuild>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+       
+    </plugins>
+  </build>
+</project>
