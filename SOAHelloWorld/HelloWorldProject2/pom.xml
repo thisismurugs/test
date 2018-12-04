@@ -19,9 +19,9 @@
            do not have to specify them over and over in every project POM.
     -->
   <parent>
-    <groupId>com.oracle.soa</groupId>
-    <artifactId>sar-common</artifactId>
-    <version>12.2.1-1-0</version>
+    <groupId>com.muruga</groupId>
+    <artifactId>SOAHelloWorld</artifactId>
+    <version>1.0</version>
   </parent>
   <properties>
     <!-- These parameters are used by the compile goal -->
