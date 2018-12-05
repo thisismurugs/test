@@ -22,7 +22,6 @@
               <property name="metadata-path" value="C:\JDeveloper\soamds\soamds"/>
             </metadata-store>
           </metadata-store-usage>
-          </metadata-store-usage>
         </metadata-store-usages>
       </persistence-config>
     </mds-config>
