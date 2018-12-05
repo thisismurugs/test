@@ -32,6 +32,7 @@
       </property>
 	  
 	  
+	  
       <!--Add search and replace rules for the component properties
 	For components and service/reference bindings, you can add policy references.
 	Example:
