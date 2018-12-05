@@ -17,7 +17,9 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'This is a minimal pipeline.'
-				bat 'mvn -Dmaven.test.failure.ignore=true install'
+				withMaven(maven: 'local_maven', mavenSettingsConfig: 'MvnGlobalSettings') {
+					bat 'mvn -Dmaven.test.failure.ignore=true install'
+				}
             }
         }
     }
