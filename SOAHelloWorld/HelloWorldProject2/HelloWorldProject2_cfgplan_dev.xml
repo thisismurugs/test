@@ -30,6 +30,7 @@
       <property name="compositeID">
          <replace>aebb3560-d868-483c-bb2d-a00e739d76ba</replace>
       </property>
+	  
       <!--Add search and replace rules for the component properties
 	For components and service/reference bindings, you can add policy references.
 	Example:
