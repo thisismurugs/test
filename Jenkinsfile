@@ -17,8 +17,8 @@ pipeline {
         stage ('Build') {
             steps {
                 echo 'This is a minimal pipeline.'
-				withMaven(maven: 'local_maven', mavenSettingsConfig: 'ae87e962-e481-43bd-96ff-22a9679c1b13',mavenLocalRepo: 'https://maven.oracle.com') {
-					bat 'mvn -Dmaven.test.failure.ignore=true install'
+				withMaven(maven: 'local_maven', mavenSettingsConfig: 'ae87e962-e481-43bd-96ff-22a9679c1b13') {
+					bat 'mvn -Denv=dev -Dmaven.test.failure.ignore=true install'
 				}
             }
         }
