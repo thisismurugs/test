@@ -84,7 +84,7 @@
     <plugin>
       <groupId>com.lesfurets</groupId>
       <artifactId>partial-build-plugin</artifactId>
-      <version>VERSION</version>
+      <version>2.6</version>
       <extensions>true</extensions>
        <configuration>
           <referenceBranch>refs/remotes/origin/master</referenceBranch>
