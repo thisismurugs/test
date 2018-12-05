@@ -66,7 +66,7 @@
       </plugins>
     </pluginManagement>
     <plugins>
-            <plugin>
+            <!--<plugin>
                 <groupId>net.java.maven-incremental-build</groupId>
                 <artifactId>incremental-build-plugin</artifactId>
                 <version>1.6</version>
@@ -80,8 +80,21 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-       
+            </plugin>-->
+    <plugin>
+      <groupId>com.lesfurets</groupId>
+      <artifactId>partial-build-plugin</artifactId>
+      <version>VERSION</version>
+      <extensions>true</extensions>
+       <configuration>
+          <referenceBranch>refs/remotes/origin/master</referenceBranch>
+          <buildAll>true</buildAll>
+          <skipTestsForNotImpactedModules>true</skipTestsForNotImpactedModules>
+          <ignoreChanged>
+            com.lesfurets:SOAHelloWorld
+          </ignoreChanged>
+       </configuration>
+    </plugin>       
     </plugins>
   </build>
 </project>
