@@ -1,16 +1,22 @@
 pipeline {
-    agent any 
+    agent any
+    tools { 
+        maven 'Maven 3.5.2' 
+        jdk 'jdk8' 
+    }
     stages {
-        stage('Stage 1') {
+        stage ('Initialize') {
             steps {
-                echo 'Hello world!' 
-				mvnHome = tool 'local_maven'
-				def workspace = pwd()
-				if (isUnix()) {
-					sh "'${mvnHome}/bin/mvn' -N -B -f SOAHelloWorld/pom.xml -Denv=dev com.oracle.soa.plugin:oracle-soa-plugin:12.2.1-1-0:sar"
-				} else {
-					bat(/${mvnHome}\bin\mvn -e -X -N -f SOAHelloWorld -amd -pl com.muruga:SOAHelloWorld -Denv=dev com.oracle.soa.plugin:oracle-soa-plugin:12.2.1-1-0:sar/)
-				}
+                sh '''
+                    echo "PATH = ${PATH}"
+                    echo "M2_HOME = ${M2_HOME}"
+                ''' 
+            }
+        }
+
+        stage ('Build') {
+            steps {
+                echo 'This is a minimal pipeline.'
             }
         }
     }
