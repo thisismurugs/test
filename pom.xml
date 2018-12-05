@@ -18,7 +18,7 @@
 	</modules>
 	
 	<properties>
-	<!--<skip.incremental>true</skip.incremental>-->
+	<skip.incremental>true</skip.incremental>
     <scac.input.dir>${project.basedir}/SOA/</scac.input.dir>
     <scac.output.dir>${project.basedir}/target</scac.output.dir>
     <scac.input>${scac.input.dir}/composite.xml</scac.input>
@@ -66,7 +66,7 @@
       </plugins>
     </pluginManagement>
     <plugins>
-            <!--<plugin>
+            <plugin>
                 <groupId>net.java.maven-incremental-build</groupId>
                 <artifactId>incremental-build-plugin</artifactId>
                 <version>1.6</version>
@@ -80,8 +80,8 @@
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>-->
-    <plugin>
+            </plugin>
+    <!--<plugin>
       <groupId>com.lesfurets</groupId>
       <artifactId>partial-build-plugin</artifactId>
       <version>2.6</version>
@@ -94,7 +94,7 @@
             com.lesfurets:SOAHelloWorld
           </ignoreChanged>
        </configuration>
-    </plugin>       
+    </plugin>  -->     
     </plugins>
   </build>
 </project>
