@@ -17,6 +17,7 @@
 		<module>SOAHelloWorld/HelloWorldProject2</module> 
 	</modules>
 	
+	
 	<properties>
 	<skip.incremental>true</skip.incremental>
     <scac.input.dir>${project.basedir}/SOA/</scac.input.dir>
